@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphical calci</title>
+    <style>
+        #Bcontainer{
+            width: 160px;
+            height: 180px;
+            background-color: rgba(0, 0, 0, 0.523);
+            position:static;
+
+        }
+        #input{
+            background-color: rgb(174, 255, 255);
+            position: fixed;
+            width: 160px;
+            height: 20px;
+            overflow: hidden;
+        }
+        #one{
+            width: 25px;
+            height: 26px;
+            background-color: darkturquoise;
+            margin-top: 30px;
+            margin-left: 2px;
+            position: fixed;
+            
+            
+            
+           
+        }
+        #two{
+            width: 25px;
+            height: 26px;
+            background-color: mediumturquoise;
+            margin-top: 30px;
+            margin-left:30px;
+            position: fixed;
+           
+        }
+        #three{
+            width: 25px;
+            height: 26px;
+            background-color: mediumturquoise;
+            margin-top: 30px;
+            margin-left:60px;
+            position: fixed;
+
+        }
+        #four{
+            width: 25px;
+            height: 26px;
+            background-color: mediumturquoise;
+            margin-top: 61px;
+            margin-left:2px;
+            position: fixed;
+        }
+        #five{
+            width: 25px;
+            height: 26px;
+            background-color: mediumturquoise;
+            margin-top: 61px;
+            margin-left:30px;
+            position: fixed;
+        }
+        #six{
+            width: 25px;
+            height: 26px;
+            background-color: mediumturquoise;
+            margin-top: 61px;
+            margin-left:60px;
+            position: fixed;
+        }
+        #seven{
+            width: 25px;
+            height: 26px;
+            background-color: mediumturquoise;
+            margin-top: 92px;
+            margin-left:2px;
+            position: fixed;
+        }
+        
+        #eight{
+            width: 25px;
+            height: 26px;
+            background-color: mediumturquoise;
+            margin-top: 92px;
+            margin-left:30px;
+            position: fixed; 
+        }
+        #nine{
+            width: 25px;
+            height: 26px;
+            background-color: mediumturquoise;
+            margin-top: 92px;
+            margin-left:60px;
+            position: fixed; 
+        }
+        #zero{
+            width: 25px;
+            height: 26px;
+            background-color: mediumturquoise;
+            margin-top: 123px;
+            margin-left:2px;
+            position: fixed;
+        }
+        #plus{
+            width: 25px;
+            height: 26px;
+            background-color:red;
+            margin-top: 30px;
+            margin-left:120px;
+            position: fixed;
+        }
+        #minus{
+            width: 25px;
+            height: 26px;
+            background-color:red;
+            margin-top: 61px;
+            margin-left:120px;
+            position: fixed;
+        }
+        #mult{
+            width: 25px;
+            height: 26px;
+            background-color:red;
+            margin-top: 92px;
+            margin-left:120px;
+            position: fixed;
+        }
+        #divide{
+            width: 25px;
+            height: 26px;
+            background-color:red;
+            margin-top: 123px;
+            margin-left:120px;
+            position: fixed;
+        }
+        #equal{
+            width: 25px;
+            height: 26px;
+            background-color:red;
+            margin-top: 154px;
+            margin-left:120px;
+            position: fixed;
+        }
+        #C{
+            width: 25px;
+            height: 26px;
+            background-color:rgb(24, 164, 223);
+            margin-top: 30px;
+            margin-left:90px;
+            position: fixed;
+        }
+        #name{
+            width: 100px;
+            height: 20px;
+            margin-top: 155px;
+            position: fixed;
+            color: rgb(0, 0, 0);
+            background-image: linear-gradient(rgb(183, 214, 69),rgb(122, 234, 144));
+            
+        }
+        
+        
+    </style>
+    <script>
+        window.onload = ()=>{
+            // variables
+            let input = document.getElementById('input')
+            let one = document.getElementById('one')
+            let two = document.getElementById('two')
+            let three = document.getElementById('three')
+            let four = document.getElementById('four')
+            let five = document.getElementById('five')
+            let six = document.getElementById('six')
+            let seven = document.getElementById('seven')
+            let eight = document.getElementById('eight')
+            let nine = document.getElementById('nine')
+            let zero = document.getElementById('zero')
+            let plus = document.getElementById('plus')
+            let minus = document.getElementById('minus')
+            let mult = document.getElementById('mult')
+            let divide = document.getElementById('divide')
+            let equal = document.getElementById('equal')
+            let C = document.getElementById('C')
+            let name = document.getElementById('name')
+
+
+            one.addEventListener('click',function(){
+                input.innerHTML += 1
+            })
+            two.addEventListener('click',function(){
+                input.innerHTML += 2
+            })
+            three.addEventListener('click',function(){
+                input.innerHTML += 3
+            })
+            four.addEventListener('click',function(){
+                input.innerHTML += 4
+            })
+            five.addEventListener('click',function(){
+                input.innerHTML += 5
+            })
+            six.addEventListener('click',function(){
+                input.innerHTML += 6
+            })
+            seven.addEventListener('click',function(){
+                input.innerHTML += 7
+            })
+            eight.addEventListener('click',function(){
+                input.innerHTML += 8
+            })
+            nine.addEventListener('click',function(){
+                input.innerHTML += 9
+            })
+            zero.addEventListener('click',function(){
+                input.innerHTML += 0
+            })
+            plus.addEventListener('click',function(){
+                input.innerHTML += '+'
+            })
+            C.addEventListener('click',function(){
+                input.innerHTML = null
+            })
+            minus.addEventListener('click',function(){
+                input.innerHTML += '-'
+            })
+            mult.addEventListener('click',function(){
+                input.innerHTML += '*'
+            })
+            divide.addEventListener('click',function(){
+                input.innerHTML += '/'
+            })
+            
+            equal.addEventListener('click',function(){
+                let calculate = eval(input.innerText)
+                
+                
+
+                console.log(calculate)
+                input.innerHTML = 'ans '+'= ' + calculate
+                if(input.innerHTML.length>15){
+                    input.innerHTML = '15 longer digit answer'
+
+                }
+                
+               
+                
+                
+
+
+
+            })
+
+        }
+
+    </script>
+</head>
+<body>
+    <div id='Bcontainer'>
+        <div id="input"> </div>
+        <button id="one" >1</button>
+        <button id="two">2</button>
+        <button id="three" >3</button>
+        <button id="four" >4</button>
+        <button id="five" >5</button>
+        <button id="six" >6</button>
+        <button id="seven" >7</button>
+        <button id="eight" >8</button>
+        <button id="nine" >9</button>
+        <button id="zero" >0</button>
+        <button id="plus" >+</button>
+        <button id="minus" >-</button>
+        <button id="mult" >*</button>
+        <button id="divide" >/</button>
+        <button id="equal" >=</button>
+        <button id="C" >C</button>
+    <div id="name">
+        <h6>rajveer pvt.ltd.</h6>
+    </div>
+        
+
+    </div>
+</body>
+</html>
